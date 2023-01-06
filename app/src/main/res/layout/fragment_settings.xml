@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".ui.settings.SettingsFragment">
+
+    <LinearLayout
+        android:id="@+id/setting_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Themes"
+            android:textColor="@color/light_blue"
+            android:textSize="21dp" />
+
+        <RadioGroup
+            android:id="@+id/Themes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/Theme_Default">
+
+            <RadioButton
+                android:id="@+id/Theme_Default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OpenDota (Default)"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/Theme_SkyDolch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SkyDolch"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/Theme_Hyperfuse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hyperfuse"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/Theme_Invisibility"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Invisibility"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/Theme_NightDota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NightDota"
+                android:textColor="@color/white"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+</LinearLayout>
