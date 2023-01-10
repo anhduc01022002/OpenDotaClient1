@@ -11,11 +11,6 @@
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
     <fragment
-        android:id="@+id/nav_stats"
-        android:name="com.example.opendotaclient.ui.stats.StatsFragment"
-        android:label="fragment_stats"
-        tools:layout="@layout/fragment_stats" />
-    <fragment
         android:id="@+id/nav_search"
         android:name="com.example.opendotaclient.ui.search.SearchFragment"
         android:label="fragment_search"

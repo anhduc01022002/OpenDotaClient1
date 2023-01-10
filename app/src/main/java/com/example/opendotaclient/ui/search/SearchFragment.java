@@ -101,11 +101,11 @@ public class SearchFragment extends Fragment implements SelectListener {
 
         return rootView;
     }
-
     @Override
-    public void onItemClicked(AdapterView<?> parent, View view, int position, long id){
+    public void onItemClicked (AdapterView < ? > parent, View view,int position, long id){
         Intent intent = new Intent(getActivity(), MainActivity.class);
         intent.putExtra("player_id", rcvUsers.getId());
         startActivity(intent);
     }
+
 }
