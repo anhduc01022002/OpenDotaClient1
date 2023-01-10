@@ -18,14 +18,17 @@
             android:layout_marginBottom="5dp">
 
             <Spinner
+                android:id="@+id/spinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/spinner"
+                android:background="@drawable/rounded_edge"
                 android:spinnerMode="dialog" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:background="@drawable/rounded_edge"
                 android:paddingVertical="20dp">
 
                 <TextView
@@ -72,75 +75,28 @@
                         android:gravity="center"
                         android:text="Win Rate"
                         android:textColor="@color/white"
-                        android:textSize="14dp" />
+                        android:textSize="14sp" />
                 </LinearLayout>
+
+                <!--Heroes List Ranked-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/HeroRankedList"
+                    tools:listitem="@layout/ranked_item_list"/>
 
                 <!--Heroes List Ranked-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/light_gray"
                     android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="0dp"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Anti-Mage"
-                        android:textColor="@color/white"
-                        android:textSize="14dp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="55%"
-                        android:textColor="@color/white"
-                        android:textSize="14dp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="43,08%"
-                        android:textColor="@color/white"
-                        android:textSize="14dp" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Axe"
-                        android:textColor="@color/white"
-                        android:textSize="14dp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="49%"
-                        android:textColor="@color/white"
-                        android:textSize="14dp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="44,63%"
-                        android:textColor="@color/white"
-                        android:textSize="14dp" />
+                        android:orientation="horizontal"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
