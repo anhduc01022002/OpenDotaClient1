@@ -1,6 +1,8 @@
 package com.example.opendotaclient.ui.model;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
 
     private int avatar;
     private String name;

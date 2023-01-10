@@ -1,6 +1,7 @@
 package com.example.opendotaclient.ui.adapter;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,6 +47,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull UserViewHolder holder, int position) {
+
         holder.useravatar.setImageResource(mListUsers.get(position).getAvatar());
         holder.username.setText(mListUsers.get(position).getName());
         holder.userid.setText(mListUsers.get(position).getId().toString());
@@ -53,6 +55,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d("CCCC","onItemClicked 0 2 K");
             }
         });
     }
